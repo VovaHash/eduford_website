@@ -11,12 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- <link rel="stylesheet" href="./all.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/945af1bd30.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <section class="header">
       <nav>
         <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
           <ul>
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
@@ -25,12 +29,56 @@
             <li><a href="">CONTACT</a></li>
           </ul>
         </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
       </nav>
       <div class="text-box">
         <h1>World's biggest university</h1>
-        <p>Making website is now one of the easiest things ij n the wor d. You just need to learn Html, Css and Javascript and you are good to go.</p>
-        <a href="">Visit us to know more</a>
+        <p>Making website is now one of the easiest things in n the world. You just need to learn Html, Css,<br> Javascript and you are good to go.</p>
+        <a href="" class="hero-btn">Visit us to know more</a>
       </div>
     </section>
+    <section class="course">
+      <h1>Courses we offer</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, atque.</p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, veniam officia magni ratione dolor facilis libero laborum nam beatae, minima repudiandae fuga! Quod iusto error quasi esse ea nisi debitis? Nihil, similique dolore? Illo quaerat, natus provident eligendi ipsum vel? Accusantium, quaerat voluptates! Ipsam consequuntur nemo, quos quaerat molestiae distinctio.</p>
+        </div>
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, veniam officia magni ratione dolor facilis libero laborum nam beatae, minima repudiandae fuga! Quod iusto error quasi esse ea nisi debitis? Nihil, similique dolore? Illo quaerat, natus provident eligendi ipsum vel? Accusantium, quaerat voluptates! Ipsam consequuntur nemo, quos quaerat molestiae distinctio.</p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, veniam officia magni ratione dolor facilis libero laborum nam beatae, minima repudiandae fuga! Quod iusto error quasi esse ea nisi debitis? Nihil, similique dolore? Illo quaerat, natus provident eligendi ipsum vel? Accusantium, quaerat voluptates! Ipsam consequuntur nemo, quos quaerat molestiae distinctio.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <script>
+      let navLinks = document.getElementById('navLinks');
+
+      function showMenu(){
+        navLinks.style.right = '0';
+      }
+      function hideMenu(){
+        navLinks.style.right = '-200px'
+      }
+
+
+    
+
+    </script>
   </body>
 </html>
+
+
+
+
+
+
